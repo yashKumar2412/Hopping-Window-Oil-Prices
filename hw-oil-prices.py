@@ -27,6 +27,8 @@ for i in range(len(df)):
 df['WINDOW_MEAN'] = mean_values
 df['WINDOW_MAX'] = max_values
 
+print(df)
+
 plt.figure(figsize=(12, 6))
 plt.plot(df['DATE'], df['DCOILWTICO'], label='Actual Value', color='blue')
 plt.plot(df['DATE'], df['WINDOW_MEAN'], label='Window Mean', color='green')
